@@ -3,6 +3,8 @@
 - [Leaflet](leafletjs.com)
 - [React Leaflet](react-leaflet.js.org)
 - [Mapbox Studio](mapbox.com)
+- [Gaia GPS](https://www.gaiagps.com/)
+- [Semantic UI React](https://react.semantic-ui.com/)
 
 ## 🧐 Tutorials
 
