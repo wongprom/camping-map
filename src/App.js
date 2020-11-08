@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Map, TileLayer } from 'react-leaflet';
-import { Container, Header } from 'semantic-ui-react';
+import { Container, Header, Item, Message } from 'semantic-ui-react';
 
 import { locations } from './data/locations';
 
@@ -11,7 +11,7 @@ const App = () => {
   const [state, setstate] = useState({
     lat: 59.3212835,
     lng: 17.9754377,
-    zoom: 10,
+    zoom: 8,
   });
 
   const position = [state.lat, state.lng];
@@ -23,7 +23,17 @@ const App = () => {
   return (
     <div className="App">
       <Container>
-        <Header content="My Camping Map" textAlign="center" />
+        <Item>
+          <Header as="h1" content="My Camping Map" textAlign="center" />
+        </Item>
+        <item>
+          <Message>
+            <Message.Header>Info</Message.Header>
+            <Message.List>
+              <Message.Item>Total pins : {locations.length}</Message.Item>
+            </Message.List>
+          </Message>
+        </item>
       </Container>
       <Map center={position} zoom={state.zoom}>
         <TileLayer
