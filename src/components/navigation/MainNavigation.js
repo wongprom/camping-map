@@ -1,24 +1,61 @@
 import React from 'react';
 import { NavLink, Router } from 'react-router-dom';
-// Logo , About, AllPlaces SignIn/SignOut, dashbord,
+
+import './mainNavigation.css';
+/**
+ * todo - style navbar
+ * todo - better solution for active link
+ * todo - make responsive
+ */
 
 const MainNavigation = () => {
   return (
     <nav>
       <ul>
         <li>
-          <NavLink to="/" exact>
+          <NavLink
+            to="/"
+            exact
+            activeStyle={{
+              fontWeight: 'bold',
+              color: 'red',
+            }}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/account">SignIn/SignOut</NavLink>
+          <NavLink
+            to="/account"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: 'red',
+            }}
+          >
+            SignIn/SignOut
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink
+            to="/about"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: 'red',
+            }}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/allPlaces">All Places</NavLink>
+          <NavLink
+            to="/allPlaces"
+            activeStyle={{
+              fontWeight: 'bold',
+              color: 'red',
+            }}
+          >
+            All Places
+          </NavLink>
         </li>
       </ul>
     </nav>

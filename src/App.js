@@ -18,7 +18,7 @@ import Places from './pages/Places';
 import './App.css';
 import CardLocation from './components/CardLocation';
 /**
- * todo - Navbar
+ * todo - Navbar => MainNavigation.js
  * ? Links to have => Logo , About, AllPlaces SignIn/SignOut, dashbord,
  * todo - Same trip => same color on pins...
  */
