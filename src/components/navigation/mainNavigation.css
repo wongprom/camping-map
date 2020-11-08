@@ -1,7 +1,7 @@
 nav {
   background: lightgray;
 }
-ul {
+nav ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -9,6 +9,6 @@ ul {
   align-items: center;
 }
 
-li {
+nav ul li {
   padding: 0 1em;
 }
