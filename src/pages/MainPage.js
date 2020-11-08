@@ -35,14 +35,6 @@ const MainPage = () => {
         <Item>
           <Header as="h1" content="My Camping Map" textAlign="center" />
         </Item>
-        <Item>
-          <Message>
-            <Message.Header>Info</Message.Header>
-            <Message.List>
-              <Message.Item>Total pins : {locations.length}</Message.Item>
-            </Message.List>
-          </Message>
-        </Item>
         <p>bättre</p>
         <Grid centered>
           <GridColumn width={14}>
