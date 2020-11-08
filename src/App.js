@@ -6,6 +6,10 @@ import { locations } from './data/locations';
 
 import './App.css';
 import CardLocation from './components/CardLocation';
+/**
+ * todo - Navbar
+ * todo - Same trip => same color on pins...
+ */
 
 const App = () => {
   const [state, setstate] = useState({
