@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import CardLocation from '../components/CardLocation';
 import { locations } from '../data/locations';
-import { Container, Header, Item, Message } from 'semantic-ui-react';
+import {
+  Container,
+  Grid,
+  GridColumn,
+  GridRow,
+  Header,
+  Item,
+  Message,
+} from 'semantic-ui-react';
 import { Map, TileLayer } from 'react-leaflet';
 
 /**
@@ -23,27 +31,34 @@ const MainPage = () => {
 
   return (
     <React.Fragment>
-      <Container>
+      <Container fluid>
         <Item>
           <Header as="h1" content="My Camping Map" textAlign="center" />
         </Item>
-        <item>
+        <Item>
           <Message>
             <Message.Header>Info</Message.Header>
             <Message.List>
               <Message.Item>Total pins : {locations.length}</Message.Item>
             </Message.List>
           </Message>
-        </item>
-      </Container>
-      <Map center={position} zoom={state.zoom}>
-        <TileLayer
-          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
+        </Item>
+        <p>bättre</p>
+        <Grid centered>
+          <GridColumn width={14}>
+            <div style={{ height: '70vh' }}>
+              <Map center={position} zoom={state.zoom}>
+                <TileLayer
+                  attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
 
-        {allLocations}
-      </Map>
+                {allLocations}
+              </Map>
+            </div>
+          </GridColumn>
+        </Grid>
+      </Container>
     </React.Fragment>
   );
 };
