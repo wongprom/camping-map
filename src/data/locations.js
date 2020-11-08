@@ -1,4 +1,7 @@
 import imgTyresta from './images/tyresta.jpg';
+/**
+ /////* todo - add data from Tierp
+ */
 
 const locations = [
   {
@@ -24,6 +27,18 @@ const locations = [
       lng: 18.2608677,
     },
     typeOfPlace: 'Fire location',
+  },
+  {
+    id: 3,
+    placeName: 'Dala alven, Tierp',
+    desc: 'Descroption text',
+    date: 'Oktober 15, 2020',
+    image: imgTyresta,
+    gps: {
+      lat: 60.40608,
+      lng: 17.29771,
+    },
+    typeOfPlace: 'Over landing',
   },
 ];
 
