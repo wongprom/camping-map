@@ -5,10 +5,7 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
-import { Map, TileLayer } from 'react-leaflet';
-import { Container, Header, Item, Message } from 'semantic-ui-react';
 
-import { locations } from './data/locations';
 import MainNavigation from './components/navigation/MainNavigation';
 import MainPage from './pages/MainPage';
 import About from './pages/About';
@@ -24,17 +21,17 @@ import CardLocation from './components/CardLocation';
  */
 
 const App = () => {
-  const [state, setstate] = useState({
-    lat: 59.3212835,
-    lng: 17.9754377,
-    zoom: 8,
-  });
+  // const [state, setstate] = useState({
+  //   lat: 59.3212835,
+  //   lng: 17.9754377,
+  //   zoom: 8,
+  // });
 
-  const position = [state.lat, state.lng];
+  // const position = [state.lat, state.lng];
 
-  const allLocations = locations.map((location) => (
-    <CardLocation key={location.id} location={location} />
-  ));
+  // const allLocations = locations.map((location) => (
+  //   <CardLocation key={location.id} location={location} />
+  // ));
 
   return (
     <div className="App">
