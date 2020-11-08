@@ -4,6 +4,7 @@ import { NavLink, Router } from 'react-router-dom';
 import './mainNavigation.css';
 /**
  * todo - style navbar
+ /////* todo - remove space above navbar
  * todo - better solution for active link
  * todo - make responsive
  */
