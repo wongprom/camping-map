@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import MainNavigation from './components/navigation/MainNavigation';
-import MainPage from './pages/MainPage';
+import MainPage from './pages/mainPage/MainPage';
 import About from './pages/About';
 import Account from './pages/Account';
 import Places from './pages/Places';
