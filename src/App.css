@@ -25,11 +25,15 @@
     transform: rotate(360deg);
   }
 } */
-
+html {
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: #dce1e5;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .App {

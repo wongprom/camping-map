@@ -36,7 +36,7 @@ const MainPage = () => {
   ));
 
   return (
-    <Container fluid>
+    <Container bg-color fluid>
       <Grid columns={2}>
         <GridRow>
           <GridColumn>
@@ -73,78 +73,23 @@ const MainPage = () => {
           </GridColumn>
         </GridRow>
       </Grid>
-
-      {/**
-       * 
-       <GridColumn width={14}>
-       <div style={{ height: '50vh' }}>
-       <Map center={position} zoom={state.zoom}>
-       <TileLayer
-       attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-       />
-       
-       {allLocations}
-       </Map>
-       </div>
-       </GridColumn>
-      */}
-
-      {/**
-       * 
-       <Grid centered>
-       <GridRow>
-       <Header size="large" content="Som Sub header about the cards" />
-       </GridRow>
-       <GridRow>
-       <Header
-       size="medium"
-       color="grey"
-       content="Som Sub header about the cards"
-       />
-       </GridRow>
-       </Grid>
-       <Grid centered>
-       <Grid.Row columns={4}>
-       <Grid.Column>
-       <Card fluid>
-       <Image src={Bild} />
-       <Card.Content>
-       <Card.Header>Daniel</Card.Header>
-       <Card.Meta>Joined in 2016</Card.Meta>
-       <Card.Description>
-       Daniel is a comedian living in Nashville.
-       </Card.Description>
-       </Card.Content>
-       </Card>
-       </Grid.Column>
-       <Grid.Column>
-       <Card fluid>
-       <Image src={Bild} />
-       <Card.Content>
-       <Card.Header>Daniel</Card.Header>
-       <Card.Meta>Joined in 2016</Card.Meta>
-       <Card.Description>
-       Daniel is a comedian living in Nashville.
-       </Card.Description>
-       </Card.Content>
-       </Card>
-       </Grid.Column>
-       <Grid.Column>
-       <Card fluid>
-       <Image src={Bild} />
-       <Card.Content>
-       <Card.Header>Daniel</Card.Header>
-       <Card.Meta>Joined in 2016</Card.Meta>
-       <Card.Description>
-       Daniel is a comedian living in Nashville.
-       </Card.Description>
-       </Card.Content>
-       </Card>
-       </Grid.Column>
-       </Grid.Row>
-       </Grid>
-      */}
+      <div className="cardsSection">
+        <div className="movie-card">
+          <div className="imageWrapper">
+            <img src={Bild} />
+          </div>
+          <div className="movie-card__overlay"></div>
+          <div className="movie-card__content">
+            <div className="movie-card__header">
+              <h1 className="movie-card__title">Tyresta national park</h1>
+              <h4 className="movie-card__info">Augusti 1, 2015</h4>
+            </div>
+            <p className="movie-card__desc">
+              First time the hole family went camping
+            </p>
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };
