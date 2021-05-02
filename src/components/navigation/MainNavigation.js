@@ -27,6 +27,18 @@ const MainNavigation = () => {
         </li>
         <li>
           <NavLink
+            to="/mainPage"
+            exact
+            activeStyle={{
+              fontWeight: 'bold',
+              color: 'red',
+            }}
+          >
+            Main Page
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/account"
             activeStyle={{
               fontWeight: 'bold',

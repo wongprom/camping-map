@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import MainNavigation from './components/navigation/MainNavigation';
+import HomePage from './pages/homePage/HomePage';
 import MainPage from './pages/mainPage/MainPage';
 import About from './pages/About';
 import Account from './pages/Account';
@@ -26,6 +27,9 @@ const App = () => {
         <MainNavigation />
         <Switch>
           <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/mainPage" exact>
             <MainPage />
           </Route>
           <Route path="/about">
